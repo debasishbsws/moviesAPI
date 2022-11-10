@@ -26,15 +26,26 @@ cd moviesAPI
 ```
 
 - **Run the project using the command**
+
   - As a Development environment
+
   ```bash
-  docker-compose -f .\docker-compose.yml -f .\docker-compose.dev.yml up --build
+  docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build
   ```
+
   - As a Production environment
+
   ```bash
-    docker-compose up --build
+    docker-compose up -d --build
   ```
+
   Voila! The project is running on your system.
+
+  To stop the project, run the command
+
+  ```bash
+    docker compose -f docker-compose.yml -f docker-compose.dev.yml down
+  ```
 
 Visit the API at http://localhost:3000/
 

@@ -12,7 +12,6 @@ const PORT = process.env.PORT || 3001;
 const URI = process.env.MONGO_URL || "mongodb://localhost:27017/";
 
 //connect to the database
-
 connectDB(URI + "moviesData");
 
 app.use("*", (req, res) => {

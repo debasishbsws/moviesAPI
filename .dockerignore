@@ -4,6 +4,6 @@ Dockerfile
 .dockerignore
 .gitignore
 .git
-
+docker-compose*
 README.md
 ```
